@@ -1,17 +1,10 @@
-export const FriendList = props => {
+import { FriendListItem } from '../friendListItem/friendListItem';
+import css from './friendList.module.css';
+export const FriendList = ({ friendList }) => {
   return (
-    <ul className="friend-list">
-      {props.friendList.map(friend => (
-        <li key={friend.id} className="item">
-          <span className="status">{friend.isOnline}</span>
-          <img
-            className="avatar"
-            src={friend.avatar}
-            alt="User avatar"
-            width="48"
-          />
-          <p className="name">{friend.name}</p>
-        </li>
+    <ul className={css.friendList}>
+      {friendList.map(friend => (
+        <FriendListItem key={friend.id} friend={friend} />
       ))}
     </ul>
   );
