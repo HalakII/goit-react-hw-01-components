@@ -25,9 +25,11 @@
 .avatar {
   height: 250px;
   width: 250px;
-  background-color: transparent;
+  background-color: #be5c5c80;
   margin: 0;
   transition: scale 300ms;
+  border-radius: 50%;
+  border: 2px solid gray;
 }
 
 .avatar:hover {
