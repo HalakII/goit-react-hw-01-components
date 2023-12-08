@@ -24,27 +24,28 @@
   gap: 5px;
 }
 .item {
-  border: 2px solid gray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   border-radius: 13px;
   width: 70px;
   height: 70px;
   background-color: rgb(225, 223, 223);
+  border: 2px solid gray;
   padding: 3px;
 }
 .item:hover {
   background-color: rgb(239, 99, 99);
 }
 .label {
-  font-size: 28px;
+  font-size: 22px;
   color: rgb(11, 11, 11);
-  font-weight: 500;
+  font-weight: 600;
 }
 .percentage {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 500;
   color: black;
 }
