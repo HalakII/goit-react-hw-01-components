@@ -1,6 +1,7 @@
 import css from './friendListItem.module.css';
 
 export const FriendListItem = ({ friend }) => {
+  console.log(friend.isOnline);
   return (
     <li className={css.item}>
       <span
